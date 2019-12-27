@@ -1,5 +1,7 @@
 window.onload = () => {
     let body = document.querySelector("body");
+    body.style.overflow = "";
+
     body.addEventListener("click", removeLoginBox)
 }
 
@@ -9,7 +11,9 @@ const removeLoginBox = () => {
     body.style.overflow = "";
 
     let loginBox = document.querySelector(".RnEpo.Yx5HN");
-    loginBox.style.display = "none"
+    if (loginBox) {
+        loginBox.style.display = "none"
+    }
 }
 
 
